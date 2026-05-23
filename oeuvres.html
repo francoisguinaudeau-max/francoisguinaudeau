@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="page">
+<body class="page page-works">
 
 <div class="grain grain-page"></div>
 
@@ -25,110 +25,126 @@
   </button>
 </header>
 
-<main class="works">
+<main class="works-v3">
 
   <header class="works-header">
     <p class="works-eyebrow">Sélection</p>
     <h1 class="works-title"><em>Notre espèce pense.<br>Les infinis s'en fichent.</em></h1>
   </header>
 
-  <div class="works-list">
+  <!-- Composition asymétrique
+       Chaque article a 2 attributs qui contrôlent sa taille et son alignement :
+       - data-size : "large" | "medium" | "small"
+       - data-align : "left" | "right" | "center"
 
-    <a href="planctoncosmique.html" class="work-row">
-      <span class="work-num">01</span>
-      <div class="work-media">
-        <div class="work-thumb" style="background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1600');"></div>
-      </div>
-      <div class="work-info">
-        <h3 class="work-title">Plancton Cosmique</h3>
-        <p class="work-meta">Expérience immersive · Biosphère de Montréal · 2023</p>
-      </div>
-      <span class="work-arrow">→</span>
-    </a>
+       Pour ajouter un nouveau projet, copier un bloc <article> et ajuster ces deux valeurs.
+  -->
 
-    <a href="thunderbird.html" class="work-row">
-      <span class="work-num">02</span>
-      <div class="work-media">
-        <div class="work-thumb" style="background-image: url('images/thunderbird/MV_color.jpg');"></div>
-      </div>
-      <div class="work-info">
-        <h3 class="work-title">The Thunderbird</h3>
-        <p class="work-meta">Film fulldome · 2022</p>
-      </div>
-      <span class="work-arrow">→</span>
-    </a>
+  <div class="works-flow">
 
-    <a href="projet.html" class="work-row">
-      <span class="work-num">03</span>
-      <div class="work-media">
-        <div class="work-thumb" style="background-image: url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=1600');"></div>
-      </div>
-      <div class="work-info">
-        <h3 class="work-title">Nanitagàbaminàgwad</h3>
-        <p class="work-meta">Film fulldome</p>
-      </div>
-      <span class="work-arrow">→</span>
-    </a>
+    <article class="work-item" data-size="large" data-align="center">
+      <a href="projet.html">
+        <span class="work-num">01</span>
+        <div class="work-visual">
+          <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=2400" alt="Plancton Cosmique">
+        </div>
+        <div class="work-caption">
+          <h3>Plancton Cosmique</h3>
+          <p>Expérience immersive · Biosphère de Montréal · 2023</p>
+        </div>
+      </a>
+    </article>
 
-    <a href="projet.html" class="work-row">
-      <span class="work-num">04</span>
-      <div class="work-media">
-        <div class="work-thumb" style="background-image: url('https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=1600');"></div>
-      </div>
-      <div class="work-info">
-        <h3 class="work-title">Eclipse Totale</h3>
-        <p class="work-meta">Film de dôme</p>
-      </div>
-      <span class="work-arrow">→</span>
-    </a>
+    <article class="work-item" data-size="medium" data-align="left">
+      <a href="projet.html">
+        <span class="work-num">02</span>
+        <div class="work-visual">
+          <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=2000" alt="The Thunderbird">
+        </div>
+        <div class="work-caption">
+          <h3>The Thunderbird</h3>
+          <p>Film fulldome · 2022</p>
+        </div>
+      </a>
+    </article>
 
-    <a href="projet.html" class="work-row">
-      <span class="work-num">05</span>
-      <div class="work-media">
-        <div class="work-thumb" style="background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1600');"></div>
-      </div>
-      <div class="work-info">
-        <h3 class="work-title">Ballet du Plancton</h3>
-        <p class="work-meta">Spectacle immersif</p>
-      </div>
-      <span class="work-arrow">→</span>
-    </a>
+    <article class="work-item" data-size="small" data-align="right">
+      <a href="projet.html">
+        <span class="work-num">03</span>
+        <div class="work-visual">
+          <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=1200" alt="Nanitagàbaminàgwad">
+        </div>
+        <div class="work-caption">
+          <h3>Nanitagàbaminàgwad</h3>
+          <p>Film fulldome</p>
+        </div>
+      </a>
+    </article>
 
-    <a href="projet.html" class="work-row">
-      <span class="work-num">06</span>
-      <div class="work-media">
-        <div class="work-thumb" style="background-image: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=1600');"></div>
-      </div>
-      <div class="work-info">
-        <h3 class="work-title">ARORA</h3>
-        <p class="work-meta">Spectacle immersif fulldome 8K</p>
-      </div>
-      <span class="work-arrow">→</span>
-    </a>
+    <article class="work-item" data-size="large" data-align="center">
+      <a href="projet.html">
+        <span class="work-num">04</span>
+        <div class="work-visual">
+          <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=2400" alt="Eclipse Totale">
+        </div>
+        <div class="work-caption">
+          <h3>Eclipse Totale</h3>
+          <p>Film de dôme</p>
+        </div>
+      </a>
+    </article>
 
-    <a href="projet.html" class="work-row">
-      <span class="work-num">07</span>
-      <div class="work-media">
-        <div class="work-thumb" style="background-image: url('https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=1600');"></div>
-      </div>
-      <div class="work-info">
-        <h3 class="work-title">EMERGENCE</h3>
-        <p class="work-meta">De la Terre aux confins de l'univers</p>
-      </div>
-      <span class="work-arrow">→</span>
-    </a>
+    <article class="work-item" data-size="small" data-align="left">
+      <a href="projet.html">
+        <span class="work-num">05</span>
+        <div class="work-visual">
+          <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200" alt="Ballet du Plancton">
+        </div>
+        <div class="work-caption">
+          <h3>Ballet du Plancton</h3>
+          <p>Spectacle immersif</p>
+        </div>
+      </a>
+    </article>
 
-    <a href="projet.html" class="work-row">
-      <span class="work-num">08</span>
-      <div class="work-media">
-        <div class="work-thumb" style="background-image: url('https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=1600');"></div>
-      </div>
-      <div class="work-info">
-        <h3 class="work-title">Courage — Céline Dion</h3>
-        <p class="work-meta">Tournée mondiale · 2019</p>
-      </div>
-      <span class="work-arrow">→</span>
-    </a>
+    <article class="work-item" data-size="medium" data-align="right">
+      <a href="projet.html">
+        <span class="work-num">06</span>
+        <div class="work-visual">
+          <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=2000" alt="ARORA">
+        </div>
+        <div class="work-caption">
+          <h3>ARORA</h3>
+          <p>Spectacle immersif fulldome 8K</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="work-item" data-size="large" data-align="center">
+      <a href="projet.html">
+        <span class="work-num">07</span>
+        <div class="work-visual">
+          <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=2400" alt="EMERGENCE">
+        </div>
+        <div class="work-caption">
+          <h3>EMERGENCE</h3>
+          <p>De la Terre aux confins de l'univers</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="work-item" data-size="medium" data-align="left">
+      <a href="projet.html">
+        <span class="work-num">08</span>
+        <div class="work-visual">
+          <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=2000" alt="Courage — Céline Dion">
+        </div>
+        <div class="work-caption">
+          <h3>Courage — Céline Dion</h3>
+          <p>Tournée mondiale · 2019</p>
+        </div>
+      </a>
+    </article>
 
   </div>
 </main>
